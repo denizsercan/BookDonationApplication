@@ -1,0 +1,28 @@
+CREATE TABLE [dbo].[Book] (
+    [BookID]          INT           IDENTITY (1, 1) NOT NULL,
+    [BookName]        VARCHAR (MAX) NOT NULL,
+    [Author]          VARCHAR (MAX) NOT NULL,
+    [PublicationDate] DATE          NOT NULL,
+    [Catagories]      VARCHAR (MAX) NOT NULL,
+    [DeliveryAddress] VARCHAR (MAX) NOT NULL,
+    [DeliveryDate]    DATE          NOT NULL,
+    [DeliveryTime]    TIME (7)      NOT NULL,
+    [UserId]          INT           NOT NULL,
+    CONSTRAINT [PK_Book] PRIMARY KEY CLUSTERED ([BookID] ASC),
+    CONSTRAINT [FK_User_Book] FOREIGN KEY ([UserId]) REFERENCES [dbo].[Users] ([UserId])
+);
+
+CREATE TABLE [dbo].[Users] (
+    [UserId]       INT            IDENTITY (1, 1) NOT NULL,
+    [Name]         NVARCHAR (MAX) NOT NULL,
+    [Surname]      NVARCHAR (MAX) NOT NULL,
+    [TC]           NVARCHAR (MAX) NOT NULL,
+    [Email]        NVARCHAR (MAX) NOT NULL,
+    [Phone]        NVARCHAR (MAX) NOT NULL,
+    [UserAddress]  NVARCHAR (MAX) NOT NULL,
+    [UserName]     NVARCHAR (MAX) NOT NULL,
+    [UserPassword] NVARCHAR (MAX) NOT NULL,
+    [Admin]        INT            DEFAULT ((0)) NOT NULL,
+    CONSTRAINT [PK_User] PRIMARY KEY CLUSTERED ([UserId] ASC)
+);
+

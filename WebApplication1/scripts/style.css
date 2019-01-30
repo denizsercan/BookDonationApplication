@@ -1,0 +1,129 @@
+body { 
+font-family: Tahoma, Arial, sans-serif; 
+line-height: 1.4;
+font-size: 13px;
+background: #404040;
+margin: 0;
+padding: 0;
+color: #efefef;
+}
+
+a { color: #F4FFCF; text-decoration: none; font-size: 15px;}
+a:hover { text-decoration: underline; }
+h1 { margin: 0; padding: 0; }
+h2 { margin-top: 70px; padding: 0; }
+
+#wrap { 
+width: 960px;
+margin: 0 auto;
+}
+
+#header {
+height: 150px;
+font-family: serif;
+}
+#header h1 {
+float: left;
+letter-spacing: 2px;
+color: #fff;
+font: normal 300% 'century gothic', arial, sans-serif;
+border-bottom: 0;
+text-transform: none;
+margin: 40px;
+}
+
+#header h2 { float: right; color: #eee; font-size: 20px; font-weight: 100; padding: 20px 10px 0 0;}
+
+#menu {
+background: #84DBFF;
+height: 70px;
+line-height: 70px;
+}
+
+#menu ul {
+list-style-type: none;
+margin: 0;
+padding-left: 20px;
+}
+#menu ul li {
+display: block;
+float: left;
+}
+#menu ul li a {
+display: block;
+padding: 0 30px 0 30px;
+text-decoration: none;
+color: #fff;
+}
+#menu ul li a:hover {
+color: #fff;
+}
+
+#contentwrap {
+padding: 0 10px 0 20px;
+}
+
+a:hover { text-decoration: underline; }
+
+#site_content
+{ width: 80%;
+  overflow: hidden;
+  margin: 0 auto 0 auto;
+  padding: 20px 24px 20px 37px;} 
+
+.form_settings
+{ margin: 15px 0 0 0;
+  padding-left: 120px;
+}
+
+.form_settings p
+{ padding: 0 0 4px 0;}
+
+.form_settings span
+{ float: left; 
+  width: 200px; 
+  text-align: left;
+  border-top: 10px;
+}
+  
+.form_settings input, .form_settings textarea
+{ padding: 5px; 
+  width: 290px; 
+  font: 100% arial; 
+  border: 1px solid #E5E5DB; 
+  background: #FFF; 
+  color: #47433F;}
+  
+.form_settings .submit
+{ font: 100% arial; 
+  border: 1px solid; 
+  width: 130px; 
+  margin: 0 0 0 212px; 
+  height: 33px;
+  padding: 2px 0 3px 0;
+  cursor: pointer; 
+  background: #84DBFF; 
+  color: #FFF;}
+
+.slogan
+{ float: right; 
+  padding-top:35px;
+  padding-right:25px;
+  text-align: right; 
+  font: 150%; 
+  color: #1293EE;}
+
+#logo
+{ 
+  position: relative;
+  height: 150px;
+  top: 50px;
+  left: 0px;
+  float: right;
+}
+
+
+
+
+
+

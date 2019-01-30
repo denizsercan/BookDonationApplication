@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="WebApplication1.Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <link href="scripts/style.css" rel="stylesheet" />
+    <form id="form1" runat="server">
+        <asp:ScriptManager runat="server"></asp:ScriptManager>
+        <div id="wrap">
+            <div id="header">
+                <h1>Book Donation System</h1>
+                <div id="logo">
+                    <asp:Panel ID="pnlgiris" runat="server">
+                        <a href="Register.aspx">Register</a>
+                        <a href="Login.aspx">Login</a>
+                      
+                    </asp:Panel>
+
+                    <asp:Panel class="slogan" ID="pnlkullanici" runat="server">
+                        Hoşgeldiniz,
+                        <asp:Label ID="lblKullaniciAdi" Text="" runat="server" />
+                         <asp:Button ID="btnClick" class="submit" Text="Çıkış" runat="server" OnClick="btnCikisClick_Click" />
+                    </asp:Panel>
+                </div>
+
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="Home.aspx">Home</a></li>
+                    <li><a></a></li>
+                    <li><a href="Donate.aspx">Donate Book</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="site_content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
